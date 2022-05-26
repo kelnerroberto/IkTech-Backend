@@ -1,4 +1,5 @@
-const port = process.env.PORT;
+require('dotenv/config');
+const port = process.env.DB_PORT;
 const app = require('./app');
 
 app.listen(port);
