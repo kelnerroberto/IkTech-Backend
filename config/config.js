@@ -24,7 +24,7 @@ module.exports = {
     "password": PASSWORD_POSTGRES,
     "database": DATABASE,
     "host": HOST,
-    "port": DB_PORT,
+    "port": DB_PORT || 5432,
     "dialect": "postgres"
   }
 }
