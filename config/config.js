@@ -1,22 +1,30 @@
-require('dotenv').config();
+require('dotenv/config');
+
+const { HOST, PASSWORD_POSTGRES, DATABASE, DB_USERNAME, DB_PORT } = process.env;
 
 module.exports = {
-  development: {
-    username: process.env.MYSQL_USER || 'root',
-    password: process.env.MYSQL_PASSWORD || '',
-    database: process.env.MYSQL_DATABASE || 'electronic_agenda',
-    host: process.env.HOSTNAME,
-    dialect: 'mysql',
+  "development": {
+    "username": DB_USERNAME,
+    "password": PASSWORD_POSTGRES,
+    "database": DATABASE,
+    "host": HOST,
+    "port": DB_PORT,
+    "dialect": "postgres"
   },
-  test: {
-    username: process.env.MYSQL_USER || 'root',
-    password: process.env.MYSQL_PASSWORD || '',
-    database: process.env.MYSQL_DATABASE || 'electronic_agenda',
-    host: process.env.HOSTNAME,
-    dialect: 'mysql',
+  "test": {
+    "username": DB_USERNAME,
+    "password": PASSWORD_POSTGRES,
+    "database": DATABASE,
+    "host": HOST,
+    "port": DB_PORT,
+    "dialect": "postgres"
   },
-  production: {
-    use_env_variable: 'JAWSDB_URL',
-    dialect: 'mysql'
-  },
-};
+  "production": {
+    "username": DB_USERNAME,
+    "password": PASSWORD_POSTGRES,
+    "database": DATABASE,
+    "host": HOST,
+    "port": DB_PORT,
+    "dialect": "postgres"
+  }
+}
