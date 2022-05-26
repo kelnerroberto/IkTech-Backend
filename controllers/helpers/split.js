@@ -4,7 +4,7 @@ const format = (eachObj) => {
   let mm = String(today.getMonth() + 1).padStart(2, '0');
   let yyyy = today.getFullYear();
   let hour = String(today.getHours());
-  let minute = String(today.getMinutes());
+  let minute = String((today.getMinutes()<10?'0':'') + date.getMinutes());
 
   const stringDate = `${dd}/${mm}/${yyyy}`;
   const stringTime = `${hour}:${minute}`;
