@@ -33,7 +33,7 @@ Você poderá entrar na pasta backend e rodar o comando `npx run db:reset`, para
 
 Após seguir esses passos, você poderá rodar o projeto utilizando o comando `npm start` dentro da pasta /backend e irá notar que aparecerá no seu terminal a mensagem `API rodando na porta: XXXX`, onde porta XXXX é a porta que você especificou no arquivo .env.
 
-### Este projeto já está em produção pelo endereço `https://protected-bastion-57133.herokuapp.com/all`!
+### Este projeto já está em produção pelo endereço [https://protected-bastion-57133.herokuapp.com/all](https://protected-bastion-57133.herokuapp.com/all)!
 
 Neste endereço mencionado você poderá verificar, em tempo real, atualizações no banco de dados.
 
