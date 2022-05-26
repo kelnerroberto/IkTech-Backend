@@ -4,10 +4,8 @@ WORKDIR /backend
 
 COPY *.json .
 
-RUN npm install
+RUN npm install && npm run db:reset
 
 COPY . .
-
-RUN npm run db:reset
 
 CMD ["node", "index.js"]
